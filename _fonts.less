@@ -1,0 +1,40 @@
+.fontface(@name, @file, @weight: normal, @style: regular){
+	@font-face {
+	    font-family: @name;
+	    src: url('@{file}.eot');
+	    src: url('@{file}.eot?#iefix') format('embedded-opentype'),
+	         url('@{file}.woff') format('woff'),
+	         url('@{file}.ttf') format('truetype'),
+	         url('@{file}.svg#frente_h1regular') format('svg');
+	    font-weight: @weight;
+	    font-style: @style;
+	}
+}
+/*
+.fontface(@name: 'DINPro',@file: '/fonts/DINPro-Regular',normal,regular);
+.fontface(@name: 'DINPro',@file: '/fonts/DINPro-Italic',normal,italic);
+.fontface(@name: 'DINPro',@file: '/fonts/DINPro-Medium',300,regular);
+.fontface(@name: 'DINPro',@file: '/fonts/DINPro-Bold',bold,regular);
+.fontface(@name: 'DINCn',@file: '/fonts/DINEngschriftStd',normal,regular);
+
+//.fontface('Frente','/fonts/FrenteH1-Regular-webfont');
+
+.fontface('Dosis','../../public/fonts/dosis-regular-webfont','normal');
+.fontface('Dosis','../../public/fonts/dosis-bold-webfont','bold');
+.fontface('Dosis','../../public/fonts/dosis-light-webfont',300);
+.fontface('PTSans','/fonts/PTS56F-webfont',normal,italic);
+
+.fontface('PTSans','/fonts/PTS75F-webfont',bold);
+.fontface('PTSans','/fonts/PTS55F-webfont',normal);
+
+.fontface('PTSansNarrow','/fonts/PTN57F-webfont',normal);
+.fontface('PTSansNarrow','/fonts/PTN77F-webfont',bold);
+
+.fontface('RobotoCn','/fonts/robotocondensed-regular-webfont',normal);
+.fontface('RobotoCn','/fonts/robotocondensed-bold-webfont',bold);
+.fontface('RobotoCn','/fonts/robotocondensed-light-webfont',100);
+
+.fontface('Aleo','/fonts/Aleo-Regular-webfont','normal');
+.fontface('Aleo','/fonts/Aleo-Bold-webfont','bold');
+.fontface('Aleo','/fonts/Aleo-Light-webfont',100);
+*/

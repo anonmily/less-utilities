@@ -1,0 +1,73 @@
+@import "_variables.less";
+
+/*---- Buttons and UI elements ----*/
+
+.btn{
+    .borderradius(2px);
+    &:active, &:focus{
+        outline: 0 !important;
+    }
+    &:active{
+        .inner-shadow(@x:2px, @y:2px, @blur:6px,@alpha: 0.5);
+    }
+}
+.btn-sm{
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 2px 6px;
+}
+.btn-blue{
+    background-color: inherit;
+    border: 2px solid #fff;
+    .transition(all 0.25s ease);
+    &:hover{
+        background-color: #00A8FF;
+        border: 2px solid #7CE1FF;
+        color: #fff;
+    }
+    &:focus{
+        background-color: #06CEE8;
+        color: #fff;
+    }
+    &:active{
+        background-color: #06CEE8;
+        color: #fff;
+    }
+}
+.btn-bluegradient{
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    color: #fff;
+
+    background: #bae5f4; 
+    .gradient(~"#bae5f4 1%, #49d2f4 3%, #1493e2 41%, #3294F5 63%, #54baf9 99%, #92eafc 99%");
+    .drop-shadow(@x: 2px, @y: 2px, @blur: 2px, @alpha: 0.13);
+    //.gradient(#09A6CB, #1DC4DA);
+    border-color: #46b8da;
+    &:hover{
+        color: #fff;
+        .gradient(~"#77E5FF, #06CEE8");
+        border-color: #00809E;
+    }
+    &:focus{
+        color: #fff;
+    }
+    &:active{
+        color: #fff;
+        .gradient(~"#09A6CB, #1DC4DA");
+
+    }
+}
+.btn-full{
+    width: 100%;
+}
+.btn-half{
+    width: 50%;
+}
+
+@media(max-width: 768px){
+    .btn, .form-control{
+        height: 36pt; //make it easier to press on mobile devices
+    }
+}

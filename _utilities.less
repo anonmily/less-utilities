@@ -1,0 +1,28 @@
+@import "_variables.less";
+
+/*---- Utility Classes ------*/
+
+.img-sm{
+    max-width: 250px;
+}
+.img-xs{
+    max-width: 150px;
+}
+.fullwidth{
+  width: 100%;
+}
+.nopadding{
+	padding: 0;
+}
+.nobullets li {
+    list-style-type: none;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  & > [class^="col-"], & [class*=" col-"]{
+  	padding-right: 0;
+  	padding-left: 0;
+  }
+}
